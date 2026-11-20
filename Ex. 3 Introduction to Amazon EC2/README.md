@@ -2,11 +2,10 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: ________RHEYA E________________________
+* **Register Number**: ___212225040334__________________
+* **Date of Submission**: ___18.11.2026_______________
 
----
 
 ## Objective
 
@@ -95,36 +94,30 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 ---
 
 ## Workflow (Student Explanation)
-
-(Write the steps you followed in your own words)
-
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
-
----
+1. Open the AWS Management Console and go to the EC2 dashboard.
+2. Explore EC2 options like Instances, AMIs, Key Pairs and Security Groups.
+3. Launch an EC2 instance using Amazon Linux 2 AMI and select t2.micro.
+4. Create a key pair and configure the security group with SSH (22) and HTTP (80).
+5. Connect to the instance using SSH with the downloaded key pair.
+6. Stop, start and reboot the instance using the EC2 console.
+7. Check CPU usage, network activity and status under the Monitoring tab.
+8. Finally, terminate the instance to avoid extra charges.
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1262" height="602" alt="image" src="https://github.com/user-attachments/assets/5bf384f7-b1eb-4c8d-9313-44e22b1ad752" />
 
----
 
 ### Screenshot 2: SSH Connection to Instance
+<img width="1260" height="652" alt="image" src="https://github.com/user-attachments/assets/2ba829dd-f4d0-4716-b083-b3939b0e8e7d" />
 
-(Insert Screenshot Here)
 
----
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
-
----
+<img width="1262" height="747" alt="image" src="https://github.com/user-attachments/assets/026cc178-e920-4324-98f7-05fd5cd9351b" />
 
 ## Result 
 
