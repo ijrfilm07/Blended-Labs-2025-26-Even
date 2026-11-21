@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: _____RHEYA E___________________________
+* **Register Number**: _212225040334____________________
+* **Date of Submission**: __20-11-2026________________
 
 ---
 
@@ -84,12 +84,23 @@ Test the database server by connecting to it locally or remotely and performing 
 
 (Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+I logged in to the AWS Management Console and opened the EC2 service.
 
+I launched a new EC2 instance using Amazon Linux 2 AMI.
+
+I configured the key pair and security group with SSH (Port 22) and MySQL (Port 3306).
+
+I connected to the EC2 instance using SSH.
+
+I installed MariaDB using Linux commands.
+
+I started the MariaDB service and enabled it.
+
+I created a sample database named studentdb and a table named students.
+
+I inserted sample student records into the table.
+
+Finally, I tested the database by executing SQL queries and verified the results.
 ---
 
 ## Output Screenshots (Attach 3)
