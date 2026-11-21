@@ -3,7 +3,7 @@
 ## Title
 
 Scale and Load Balance Your Architecture
-Author : your name   Reg no : yours   Date :
+Author :RHEYA E  Reg no : 212225040334  Date :21-11-2026
 
 ---
 
@@ -72,8 +72,6 @@ Describe step-by-step how you performed this experiment in your own words.
 
 ## Output Screenshots 
 
-
----
 
 
 ## Result
