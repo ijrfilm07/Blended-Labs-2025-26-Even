@@ -82,46 +82,32 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+First, I opened the AWS Management Console and went to the VPC service. I created a new security group named DB Security Group and configured it to allow MySQL (port 3306) access from the Web Security Group.
 
-I logged in to the AWS Management Console and opened the EC2 service.
+Next, I navigated to the RDS service and created a DB Subnet Group named DB-Subnet-Group. I selected the Lab VPC, chose two availability zones (us-east-1a and us-east-1b), and added the required subnets (10.0.1.0/24 and 10.0.3.0/24).
 
-I launched a new EC2 instance using Amazon Linux 2 AMI.
+After that, I created a new Amazon RDS MySQL database instance. I selected Dev/Test template, enabled Multi-AZ deployment, and configured details like DB identifier (lab-db), username (main), and password (lab-password). I also selected db.t3.micro instance type and attached the DB Security Group.
 
-I configured the key pair and security group with SSH (Port 22) and MySQL (Port 3306).
+Once the database was created, I waited until its status became available and then copied the endpoint URL from the connectivity section.
 
-I connected to the EC2 instance using SSH.
-
-I installed MariaDB using Linux commands.
-
-I started the MariaDB service and enabled it.
-
-I created a sample database named studentdb and a table named students.
-
-I inserted sample student records into the table.
-
-Finally, I tested the database by executing SQL queries and verified the results.
+Finally, I opened the web application using the provided EC2 IP address, navigated to the RDS section, and entered the database details (endpoint, database name, username, password). After submitting, I successfully connected the app and tested it by adding and managing contacts in the address book.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Instance for Database Server
+<img width="1257" height="552" alt="image" src="https://github.com/user-attachments/assets/0f33c1c0-4275-4aba-8b91-fb8155a1e6e8" />
 
-(Insert Screenshot Here)
-
----
 
 ### Screenshot 2: Database Service Running
+<img width="1262" height="557" alt="image" src="https://github.com/user-attachments/assets/7434ad22-398c-4ef5-8c6b-a5a995fb8d19" />
+<img width="1267" height="556" alt="image" src="https://github.com/user-attachments/assets/1ab5ff44-af44-4c9f-bd6b-2a260d0fb610" />
 
-(Insert Screenshot Here)
-
----
 
 ### Screenshot 3: Sample Database and Table
+<img width="1130" height="590" alt="image" src="https://github.com/user-attachments/assets/97b54c1f-b35b-4812-bada-0269a189c380" />
+<img width="1142" height="542" alt="image" src="https://github.com/user-attachments/assets/780b09cf-cb43-4c8a-a673-4e8295a84760" />
 
-(Insert Screenshot Here)
-
----
 
 ## Result
 
