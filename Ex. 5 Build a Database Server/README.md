@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: _____RHEYA E___________________________
-* **Register Number**: _212225040334____________________
-* **Date of Submission**: __20-11-2026________________
+* **Name**: RHEYA E
+* **Register Number**: 212225040334
+* **Date of Submission**: 20.11.26
 
 ---
 
@@ -82,33 +82,35 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-First, I opened the AWS Management Console and went to the VPC service. I created a new security group named DB Security Group and configured it to allow MySQL (port 3306) access from the Web Security Group.
+1. First, a security group named DB Security Group was created to allow the web server to connect to the database using port 3306 (MySQL).
+2. A DB Subnet Group was created with subnets from two Availability Zones to allow the database to run in a Multi-AZ environment for high availability.
+3. A MySQL RDS instance named lab-db was created with the database name lab, username main, and password lab-password.
+4. The database was associated with the DB Security Group and the Lab VPC so that the web server can securely connect to the database.
+5. The web application running on the EC2 server was opened using its IP address, and the RDS endpoint, database name, username, and password were entered to interact with the database.
 
-Next, I navigated to the RDS service and created a DB Subnet Group named DB-Subnet-Group. I selected the Lab VPC, chose two availability zones (us-east-1a and us-east-1b), and added the required subnets (10.0.1.0/24 and 10.0.3.0/24).
 
-After that, I created a new Amazon RDS MySQL database instance. I selected Dev/Test template, enabled Multi-AZ deployment, and configured details like DB identifier (lab-db), username (main), and password (lab-password). I also selected db.t3.micro instance type and attached the DB Security Group.
-
-Once the database was created, I waited until its status became available and then copied the endpoint URL from the connectivity section.
-
-Finally, I opened the web application using the provided EC2 IP address, navigated to the RDS section, and entered the database details (endpoint, database name, username, password). After submitting, I successfully connected the app and tested it by adding and managing contacts in the address book.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Instance for Database Server
-<img width="1257" height="552" alt="image" src="https://github.com/user-attachments/assets/0f33c1c0-4275-4aba-8b91-fb8155a1e6e8" />
+<img width="1919" height="961" alt="1" src="https://github.com/user-attachments/assets/11cb090b-189e-4714-8a8f-0cf0b9b21728" />
 
+
+---
 
 ### Screenshot 2: Database Service Running
-<img width="1262" height="557" alt="image" src="https://github.com/user-attachments/assets/7434ad22-398c-4ef5-8c6b-a5a995fb8d19" />
-<img width="1267" height="556" alt="image" src="https://github.com/user-attachments/assets/1ab5ff44-af44-4c9f-bd6b-2a260d0fb610" />
 
+<img width="1919" height="977" alt="2" src="https://github.com/user-attachments/assets/521be9c0-e97b-4383-b703-67a4b57a08a1" />
+
+---
 
 ### Screenshot 3: Sample Database and Table
-<img width="1130" height="590" alt="image" src="https://github.com/user-attachments/assets/97b54c1f-b35b-4812-bada-0269a189c380" />
-<img width="1142" height="542" alt="image" src="https://github.com/user-attachments/assets/780b09cf-cb43-4c8a-a673-4e8295a84760" />
 
+<img width="1910" height="1133" alt="Screenshot 2026-03-01 105153" src="https://github.com/user-attachments/assets/a6917d75-af8c-4dd8-bf5f-45b03f311162" />
+
+---
 
 ## Result
 
-This experiment demonstrated how to build a database server in AWS using an EC2 instance. By installing and configuring a DBMS, creating a sample database, and testing connectivity, the fundamentals of hosting and managing a cloud-based database server were underst
+This experiment demonstrated how to build a database server in AWS using an EC2 instance. By installing and configuring a DBMS, creating a sample database, and testing connectivity, the fundamentals of hosting and managing a cloud-based database server were understand.
