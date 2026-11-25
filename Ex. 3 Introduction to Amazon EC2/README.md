@@ -2,10 +2,11 @@
 
 ## Author
 
-* **Name**: ________RHEYA E________________________
-* **Register Number**: ___212225040334__________________
-* **Date of Submission**: ___18.11.2026_______________
+* **Name**: RHEYA E
+* **Register Number**: 212225040334
+* **Date of Submission**: 18.11.2026
 
+---
 
 ## Objective
 
@@ -93,31 +94,29 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ---
 
-## Workflow (Student Explanation)
-1. Open the AWS Management Console and go to the EC2 dashboard.
-2. Explore EC2 options like Instances, AMIs, Key Pairs and Security Groups.
-3. Launch an EC2 instance using Amazon Linux 2 AMI and select t2.micro.
-4. Create a key pair and configure the security group with SSH (22) and HTTP (80).
-5. Connect to the instance using SSH with the downloaded key pair.
-6. Stop, start and reboot the instance using the EC2 console.
-7. Check CPU usage, network activity and status under the Monitoring tab.
-8. Finally, terminate the instance to avoid extra charges.
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-<img width="1262" height="602" alt="image" src="https://github.com/user-attachments/assets/5bf384f7-b1eb-4c8d-9313-44e22b1ad752" />
+<img width="1230" height="595" alt="image" src="https://github.com/user-attachments/assets/0e515995-cb0f-4f7a-a8bc-814bdc56ca10" />
 
+
+
+---
 
 ### Screenshot 2: SSH Connection to Instance
-<img width="1260" height="652" alt="image" src="https://github.com/user-attachments/assets/2ba829dd-f4d0-4716-b083-b3939b0e8e7d" />
 
+<img width="1187" height="637" alt="image" src="https://github.com/user-attachments/assets/24f36212-0505-4c0e-ae30-830ee77696bf" />
 
+<img width="1455" height="867" alt="image" src="https://github.com/user-attachments/assets/2a5f4418-2609-47a9-8c6a-f209395e8c73" />
+
+---
 
 ### Screenshot 3: Instance Monitoring / Status
 
-<img width="1262" height="747" alt="image" src="https://github.com/user-attachments/assets/026cc178-e920-4324-98f7-05fd5cd9351b" />
+<img width="1231" height="612" alt="Screenshot 2026-11-18 181031" src="https://github.com/user-attachments/assets/99d4ff80-cbfd-4c64-b24f-b567e277f7d3" />
+
 
 ## Result 
 
